@@ -11,6 +11,6 @@ kgInput.addEventListener('input', event => {
     let kg = event.target.value;
     output.style.visibility = (kg === '0') ? 'hidden' : 'visible';
     gramOutput.innerHTML = `${kg * 1000} g`;
-    poundOutput.innerHTML = `${kg * 2.0462262} lb`;
-    ozOutput.innerHTML = `${kg * 35.2739619} oz`;
+    poundOutput.innerHTML = `${(kg * 2.0462262).toFixed(2)} lb`;
+    ozOutput.innerHTML = `${(kg * 35.2739619).toFixed(2)} oz`;
 });
